@@ -1,4 +1,9 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<p>Start editing to see some magic happen :)</p>
+
+<ul>
+  <li *ngFor="let u of users$ | async">{{ u.name }}</li>
+</ul>
+<ul>
+  <li *ngFor="let u of passedlist$ | async">{{ u.name }}</li>
+</ul>
